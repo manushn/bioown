@@ -1,0 +1,32 @@
+{
+  "name": "college-attendance-desktop",
+  "version": "1.0.0",
+  "description": "Desktop Electron kiosk shell for College Staff Attendance System",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "edu.nicetech.collegeattendance",
+    "productName": "College Staff Attendance",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "runAfterFinish": true
+    }
+  }
+}
+

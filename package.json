@@ -1,0 +1,21 @@
+{
+  "name": "college-staff-attendance-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "College Staff Fingerprint Attendance System with Mantra MFS100 V54",
+  "scripts": {
+    "init-db": "npm --prefix apps/local-api run init-db",
+    "dev:api": "npm --prefix apps/local-api run dev",
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "start:api": "npm --prefix apps/local-api run start",
+    "start:desktop": "npm --prefix apps/desktop start"
+  },
+  "workspaces": [
+    "apps/local-api",
+    "apps/web",
+    "apps/desktop"
+  ]
+}
+

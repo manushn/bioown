@@ -1,0 +1,8 @@
+{
+  "jwtSecret": "4f8cae137323feb8d9ef06653160169d54e4899a6f19edcaedb26c4d0ceadb89",
+  "recoveryKey": "RECOVERY-NICETECH-2027-KEY-SECURE",
+  "defaultAdminUsername": "niadmin",
+  "defaultAdminPassword": "ni2027",
+  "sessionExpiryHours": 12,
+  "maxFailedLogins": 5
+}

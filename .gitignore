@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs
+dist/
+build/
+bin/
+obj/
+out/
+Release/
+Debug/
+
+# Local database files & runtime logs
+data/
+*.db
+*.db-wal
+*.db-shm
+backups/
+restore-inbox/
+logs/
+*.log
+
+# Environment & IDE
+.env
+.env.local
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.user
+
