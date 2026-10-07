@@ -109,7 +109,7 @@ export default function DevicePage() {
             <div className="p-3 rounded-lg bg-slate-50 border border-slate-200">
               <span className="text-slate-500 block text-[11px] mb-1 font-medium">Optical Sensor Status:</span>
               <span className={`font-bold ${
-                deviceStatus?.status === 'READY' ? 'text-emerald-700' : 'text-rose-600'
+                deviceStatus?.status === 'READY' || deviceStatus?.status === 'CONNECTED' ? 'text-emerald-700' : 'text-rose-600'
               }`}>
                 {deviceStatus?.status || 'CHECKING'}
               </span>

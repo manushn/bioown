@@ -76,7 +76,7 @@ export default function DeviceCard({ onStatusUpdate }) {
     }
   };
 
-  const isReady = status?.status === 'READY';
+  const isReady = status?.status === 'READY' || status?.status === 'CONNECTED';
   const isBusy = status?.status === 'SCANNER BUSY';
 
   return (
